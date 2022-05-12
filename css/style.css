@@ -264,7 +264,6 @@ p {
   display: block;
   content: "";
   height: 120px;
-  margin-right: 10px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-cards-color);
@@ -344,7 +343,7 @@ p {
 }
 
 .team-name {
-  padding: 30px 10px 16px 10px;
+  padding: 30px 10px 30px 10px;
 }
 
 .team-leader {
@@ -365,13 +364,16 @@ p {
 
 .team-contacts-list {
   display: flex;
-  padding: 0 32px 30px 32px;
+  justify-content: center;
+  margin-top: 16px;
 }
 
-.team-contacts-item {
+.team-contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  padding: 12px;
 }
 
 .team-contacts-item:hover,
@@ -381,8 +383,8 @@ p {
   cursor: pointer;
 }
 
-.team-contacts-item:hover .team-icon,
-.team-contacts-item:focus .team-icon {
+.team-contacts-link:hover .team-icon,
+.team-contacts-link:focus .team-icon {
   fill: var(--background-color);
 }
 
@@ -406,24 +408,26 @@ p {
   display: flex;
 }
 
-.partners-item {
-  padding: 16px 32px;
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
 
+.partners-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
-}
 
-.partners-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .partners-item:hover .partners-icon {
   fill: var(--accent-text-color);
 }
 
-.partners-item:hover,
-.partners-item:focus {
+.partners-item:hover .partners-link,
+.partners-item:focus .partners-link {
   border: 1px solid var(--accent-text-color);
 }
 
@@ -464,7 +468,6 @@ p {
 
 .join {
   margin-left: 85px;
-  padding-top: 11px;
 }
 
 .join-title {
@@ -480,26 +483,30 @@ p {
 
 .footer-text {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-list {
   display: flex;
 }
 
-.footer-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  cursor: pointer;
-}
-
 .footer-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-item:hover {
+.footer-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus {
   background-color: var(--accent-text-color);
 }
 
@@ -564,12 +571,6 @@ p {
   width: 370px;
 }
 
-.projects-list:hover {
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects-list:nth-child(3n) {
   margin-right: 0;
 }
@@ -603,4 +604,11 @@ p {
 .projects-link {
   color: inherit;
   text-decoration: none;
+}
+
+.projects-link:hover,
+.projects-link:focus {
+  background: red;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
