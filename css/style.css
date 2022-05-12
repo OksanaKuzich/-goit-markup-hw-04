@@ -4,7 +4,7 @@
   --accent-text-color: #2196f3;
   --hover-btn-color: #188ce8;
   --logo-text-color: #000000;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 
   --background-color: #fff;
   --background-footer-color: #2f303a;
@@ -115,7 +115,7 @@ p {
 
 .contacts-link {
   display: flex;
-align-items: center;
+  align-items: center;
 
   padding-top: 32px;
   padding-bottom: 32px;
@@ -157,7 +157,6 @@ align-items: center;
 .contacts-item:focus .icon-envelope {
   fill: var(--accent-text-color);
 }
-
 
 /* Главная страница */
 .hero {
@@ -365,29 +364,27 @@ align-items: center;
 }
 
 .team-contacts-list {
-display: flex;
-    padding: 0 32px 30px 32px;
+  display: flex;
+  padding: 0 32px 30px 32px;
 }
 
 .team-contacts-item {
-    width: 44px;
-    height: 44px;
-    padding: 12px;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
 }
 
 .team-contacts-item:hover,
 .team-contacts-item:focus {
-background-color: var(--accent-text-color);
-border-radius: 50%;
-cursor: pointer;
+  background-color: var(--accent-text-color);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .team-contacts-item:hover .team-icon,
 .team-contacts-item:focus .team-icon {
   fill: var(--background-color);
 }
-
-
 
 .team-icon {
   width: 20px;
@@ -396,31 +393,31 @@ cursor: pointer;
 }
 
 .team-contacts-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /* Блок Наши партнеры */
-  .partners {
+.partners {
   padding-top: 94px;
   padding-bottom: 94px;
-  }
+}
 
-  .partners-list {
-    display: flex;
-  }
+.partners-list {
+  display: flex;
+}
 
-  .partners-item {
-    padding: 16px 32px;
+.partners-item {
+  padding: 16px 32px;
 
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--icon-color);
-    cursor: pointer;
-  }
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  cursor: pointer;
+}
 
-  .partners-item:not(:last-child) {
-    margin-right: 30px;
-  }
+.partners-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .partners-item:hover .partners-icon,
 .partners-item:focus .partners-icon {
@@ -429,16 +426,14 @@ cursor: pointer;
 
 .partners-item:hover,
 .partners-item:focus {
-    border: 1px solid var(--accent-text-color);
+  border: 1px solid var(--accent-text-color);
 }
 
-  .partners-icon {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-color)
-  }
-
-
+.partners-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+}
 
 /* Футер */
 
@@ -475,14 +470,14 @@ cursor: pointer;
 }
 
 .join-title {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 
   font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--background-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
 }
 
 .footer-text {
@@ -503,7 +498,7 @@ margin-bottom: 20px;
 }
 
 .footer-item:not(:last-child) {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-item:hover {
@@ -514,9 +509,7 @@ margin-bottom: 20px;
   width: 20px;
   height: 20px;
   fill: var(--background-color);
-
 }
-
 
 /* Стили второй вкладки ПОРТФОЛИО */
 /* Галерея*/
@@ -574,8 +567,9 @@ margin-bottom: 20px;
 }
 
 .projects-list:hover {
-  border: 1px solid #EEEEEE;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list:nth-child(3n) {
