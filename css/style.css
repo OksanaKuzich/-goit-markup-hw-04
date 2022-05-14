@@ -376,8 +376,8 @@ p {
   height: 44px;
 }
 
-.team-contacts-item:hover,
-.team-contacts-item:focus {
+.team-contacts-link:hover,
+.team-contacts-link:focus {
   background-color: var(--accent-text-color);
   border-radius: 50%;
   cursor: pointer;
@@ -422,12 +422,12 @@ p {
 
 }
 
-.partners-item:hover .partners-icon {
+.partners-link:hover .partners-icon {
   fill: var(--accent-text-color);
 }
 
-.partners-item:hover .partners-link,
-.partners-item:focus .partners-link {
+.partners-link:hover,
+.partners-link:focus {
   border: 1px solid var(--accent-text-color);
 }
 
@@ -604,11 +604,11 @@ p {
 .projects-link {
   color: inherit;
   text-decoration: none;
+  display: block;
 }
 
 .projects-link:hover,
 .projects-link:focus {
-  background: red;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
